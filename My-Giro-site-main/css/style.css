@@ -1,0 +1,696 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Segoe UI";
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 65%;
+    margin: auto;
+    max-width: 1250px;
+    display: block;
+}
+
+ /*Шапка с кнопкой заказать звонок*/
+.head {
+    display: flex;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2); 
+    padding-left: 17.5%;
+    padding-right: 17%;
+    height: 60px;
+    width: 100%;
+}
+.nubber {
+    margin-top: 12px;
+}
+
+.button-header {
+    display: block;
+    background: #fc9400;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    height: 40px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 35px;
+    border: 2px solid #ffa23f;
+}
+.button-header:hover{
+    transition: 2s;
+    background: transparent;
+    color: #000;
+    border-color: #fc9400;
+}
+ /*Шапка с меню станицы*/
+.Logo {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px 0px 10px;
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    transform: 1s;
+    color: #fc9400;
+}
+
+.menu li {
+    margin-right: 25px;
+}
+ /*Главный экран*/
+.main {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/glavn.jpg) no-repeat center top / cover;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    color: white;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+.main-p {
+    padding: 0 17% 2% 17%;
+}
+
+p {
+    line-height: 30px;
+}
+
+.main-button {
+    background: #ffffff;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    height: 40px;
+    margin-top: 5px;
+    width: 130px;
+    border: 2px solid #ffffff;
+}
+.main-button:hover {
+    transition: 1s;
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    border-color: #ffffff;
+}
+ /*Раздел преимущества*/
+.advantages {
+    margin-top: 50px;
+}
+.h1-adv {
+    font-size: 30px;
+    font-weight: lighter;
+}
+.head-advan {
+    display: flex;
+}
+.button-ad1 {
+    padding: 20px 2px;
+    height: 40px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 1px;
+}
+.button-ad2 {
+    padding: 20px 2px;
+    height: 40px;
+    margin-left: 1px;
+    margin-top: 10px;
+    margin-right: 35px;
+}
+
+.advan-block {
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+}
+.adv-block-img {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.adv-text {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+
+ /*Раздел О нас*/
+.h1-us {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: justify;
+}
+.about-us {
+    margin-bottom: 50px;
+}
+
+
+ /*Раздел расслыки*/
+.rass {
+    background-color: #fc9400;
+    width: 100%;
+    height: 94px;
+}
+
+.rass-text {
+    display: flex;
+}
+.rass-text p {
+    width: 269px;
+    height: 55px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20%;
+}
+.input-container {
+    margin-top: 30px;
+    background: rgba(217, 217, 217, 0.00);
+    width: 250px;
+    height: 40px;
+    border: 1px solid #E6E6E6;
+    margin-right: 20px;
+    width: 35%; 
+    resize: none; 
+}
+.input-container[type="text"] {
+    padding: 10px;
+    color: #fff;
+}
+::placeholder { 
+    color: #ffffff;
+}
+.button-rass {
+    margin-top: 30px;
+    background: #fff;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    height: 40px;
+}
+
+
+ /*Раздел Плюсы и минусы*/
+.plus-minus {
+    display: flex;
+    justify-content: space-between;
+}
+.spisok {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: auto;
+    margin-left: -40px;
+    margin-right: 10%;
+}
+.spisok li {
+    margin: 5px;
+}
+.peculiarities p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+ /*Каталог*/
+.katalog {
+    display: block;
+    margin-top: 20px;
+    background: #FBFBFB;
+    width: 100%;
+    height: 700px;
+}
+.samokaty{
+    display: flex;
+    padding-top: 2%;
+}
+.menu-k {
+    padding: 20px 2px;
+    height: 40px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 1px;
+}
+.menu-k-a {
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    background: transparent; /* Убираем фон */
+    border: none; /* Убираем обводку */
+}
+.menu-k-a-ac {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 25px;
+    background: #F9A22C;
+    border: none; /* Убираем обводку */
+}
+.menu-k-a:hover{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 25px;
+    background: #F9A22C;
+    cursor: pointer
+}
+.product {
+    display: flex;
+}
+.product-block {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    padding-top: 20px;
+    width: 1134px;
+    height: 450px;
+}
+.name-tov {
+    background-color: #F9A22C;
+    width: 40%;
+    text-align: center;
+    margin-top: 18px;
+    border-radius: 0px 30px 30px 0px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 14px;
+}
+.product-block img {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.nazv {
+    display: block;
+    margin-top: 23px;
+    margin-left: 28px;
+    font-size: 16px;
+}
+.pay {
+    display: block;
+    margin-top: 20px;
+    margin-left: 28px;
+    margin-bottom: 42px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+ /*Раздел консультант*/
+.consult {
+    margin-top: 50px;
+}
+.consult-items {
+    display: flex;
+    align-items: center;
+}
+.consult-item {
+    width: 224px;
+    height: 190px;
+    background: #fbfbfb;
+    vertical-align: top;
+    flex-direction: column;
+}
+.consult-img {
+    width: 164px;
+    height: 190px;
+}
+.consult-name {
+    display: block;
+    margin-top: 29px;
+    margin-left: 29px;
+}
+.consult-job {
+    display: block;
+    margin-left: 29px;
+    font-size: 12px;
+    font-style: italic;
+}
+.consult-button {
+    display: block;
+    padding: 9px 10px;
+    background-color: #F9A22C;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 29px;
+    margin-right: 98px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+ /*Раздел бренды*/
+.brend {
+    margin-top: 20px;
+    width: 100%;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: center;
+}
+.spisok-brend {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.brend-a {
+    text-decoration: none;
+    color: #9B9B9B;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 5px;
+    width: 100%;
+}
+
+
+ /*Раздел полезной информации*/
+.info {
+    margin-top: 60px;
+}
+.info-blocks {
+    display: flex;
+    align-items: center;
+}
+.info-block {
+    width: 263px;
+    height: 263px;
+    margin-right: 27px;
+    margin-bottom: 120px;
+}
+.info-text {
+    display: block;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.info-image1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/info1.jpg) no-repeat center top / cover;
+}
+.info-image2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/info2.jpg) no-repeat center top / cover;
+}
+.info-image3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/info3.jpg) no-repeat center top / cover;
+}
+.info-image4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/info4.jpg) no-repeat center top / cover;
+}
+
+
+
+ /*Подвал сайта*/
+footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 30%;
+    background: #FBFBFB;
+    padding: 100px;
+    padding-left: 0%;
+}
+.text-footer {
+    display: flex;
+    color: #8191A6;
+}
+.company-footer h2 {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.company-footer {
+    margin-left: 5%;
+    width: 250px;
+}
+.info-footer {
+    width: 550px;
+    font-size: 14px;
+    margin-right: 15%;
+    font-weight: lighter;
+}
+.info-footer p {
+    line-height: 20px;
+    margin-left: 0;
+}
+.us-footer {
+    text-decoration: none;
+    color: #000;
+}
+.us-footer:hover {
+    color: #fc9400;
+}
+.spisok-footer {
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: lighter;
+    margin: auto;
+    margin-left: -40px;
+    margin-right: 10%;
+}
+.spisok-footer li {
+    margin: 7px;
+    margin-left: 0;
+    width: 100%;
+}
+.ruters {
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+
+ /*Адаптивность*/
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .head {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .head {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .menu li {
+        margin-right: 15px;
+    }
+
+    .advan-block {
+        flex-direction: column;
+    }
+
+    .plus-minus {
+        flex-direction: column;
+    }
+
+    .info-blocks {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .head {
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nubber {
+        margin-top: auto;
+    }
+
+    .button-header {
+        margin-right: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-left:30px;
+        background-color: white;
+        margin-top: 30px;
+    }
+
+        .menu li {
+            margin-bottom: 15px;
+        }
+
+    .advan-block {
+        flex-direction: column;
+    }
+
+    .katalog {
+        height: auto;
+    }
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-block {
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+    }
+    .consult-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plus-minus {
+        flex-direction: column;
+    }
+
+    .info-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .spisok-brend {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .container {
+        max-width: 350px;
+    }
+
+    .head {
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nubber {
+        margin-top: auto;
+    }
+
+    .button-header {
+        margin-right: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-left: 30px;
+        background-color: white;
+        margin-top: 30px;
+    }
+
+        .menu li {
+            margin-bottom: 15px;
+        }
+
+    .advan-block {
+        flex-direction: column;
+    }
+
+    .katalog {
+        height: auto;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-block {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .consult-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plus-minus {
+        flex-direction: column;
+    }
+
+    .info-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spisok-brend {
+        font-size: 10px;
+    }
+}
